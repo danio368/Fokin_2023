@@ -2,7 +2,7 @@
 
 %Compute net speed for each cell (which is the net displacement of one cell divided by the duration of its track : it underestimates the actual speed)
 for i=1:length(Cells)
-    Cells(i).net_speed=norm(Cells(i).total_displacement_turn)/((Cells(i).coordinates(end)-Cells(i).coordinates(1,4))*time_interval);
+    Cells(i).net_speed=norm(Cells(i).total_displacement)/((Cells(i).coordinates(end)-Cells(i).coordinates(1,4))*time_interval);
 end
 
 %Compute the mean instant speed for every cell, average of the norm of instant
