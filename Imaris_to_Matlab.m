@@ -65,4 +65,4 @@ end
 
 
 
-clear i j length_cells_speed_turn;
+clear i j;
